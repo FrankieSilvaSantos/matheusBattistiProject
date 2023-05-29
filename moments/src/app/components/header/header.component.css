@@ -1,0 +1,9 @@
+.aCor {
+    color: #444;
+    transition: .4s;
+}
+
+.aCor:hover {
+    color: #dce129;
+    border-bottom:solid 2px #dce129;
+}
