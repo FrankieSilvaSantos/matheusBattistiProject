@@ -1,0 +1,35 @@
+<form (ngSubmit)="submit()" style="margin-top: 20px;" [formGroup]="momentForm" #formDir="ngForm">
+    <!-- 2 column grid layout with text inputs for the first and last names -->
+  
+   
+        <div class="form mb-4">
+          <input type="text" id="form6Example1" formControlName="title" class="form-control" />
+          <label class="form-label" for="form6Example1">Titulo</label>
+        </div>
+
+        <div *ngIf="title.invalid && formDir.submitted" class="validation-error">
+          <p  *ngIf="title.errors?.['required']" class="validation-error">O titulo é obrigatorio</p>
+        </div>
+     
+
+    <!-- Message input -->
+    <div class="form mb-4">
+      <textarea class="form-control" formControlName="description" id="form6Example7" rows="4"></textarea>
+      <label class="form-label" for="descricao">Descrição</label>
+    </div>
+
+    <div *ngIf="description.invalid && formDir.submitted" class="validation-error">
+      <p class="validation-error" *ngIf="description.errors?.['required']" class="validation-error">A descrição é obrigatória</p>
+    </div>
+
+    <div class="form mb-4">
+        <input type="file" class="form-control" formControlName="image" name="" id="">
+        <label class="form-label" for="image">Coloque a foto que mais marcou</label>
+      </div>
+  
+
+  
+    <!-- Submit button -->
+    <input type="submit" value="Compartilhar" class="btn btn-primary btn-block mb-4 buttonStyle">
+
+  </form>

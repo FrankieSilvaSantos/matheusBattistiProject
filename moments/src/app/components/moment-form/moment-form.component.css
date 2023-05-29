@@ -1,0 +1,26 @@
+.buttonStyle {
+    width: 130px;
+
+
+    background-color: gray;
+    color: white;
+    box-shadow:2px 2px 4px black;
+}
+
+
+
+.buttonStyle:hover, .buttonStyle:focus, .buttonStyle:active, .buttonStyle:visited    {
+    background-color: rgba(32, 32, 32, 0.795) !important;
+    color: white;
+    box-shadow:2px 2px 4px black !important; 
+    outline:2px solid gray;
+   
+}
+
+.validation-error {
+    color: red;
+ 
+}
+
+
+

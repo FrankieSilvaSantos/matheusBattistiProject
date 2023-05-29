@@ -1,7 +1,16 @@
 {
   "extends": ["plugin:adonis/typescriptApp", "prettier"],
   "plugins": ["prettier"],
+
+  "project": ["path.join(__dirname, 'tsconfig.eslint.json')"], //
+  
   "rules": {
     "prettier/prettier": ["error"]
+
+    
+
   }
+
+ 
+
 }
