@@ -23,13 +23,17 @@
     </div>
 
     <div class="form mb-4">
-        <input type="file" class="form-control" formControlName="image" name="" id="">
+        <input type="file" class="form-control"   (change)="onFileSelected($event)">
         <label class="form-label" for="image">Coloque a foto que mais marcou</label>
       </div>
-  
 
+      <div *ngIf="image.invalid && formDir.submitted" class="validation-error">
+        <p class="validation-error" *ngIf="image.errors?.['required']" class="validation-error">A imagem é obrigatória</p>
+      </div>
+  
+    
   
     <!-- Submit button -->
-    <input type="submit" value="Compartilhar" class="btn btn-primary btn-block mb-4 buttonStyle">
+    <input ng-valid type="submit" value="Compartilhar"   class="btn btn-primary btn-block mb-4 buttonStyle">
 
   </form>

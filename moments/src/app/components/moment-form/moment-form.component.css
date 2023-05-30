@@ -19,7 +19,8 @@
 
 .validation-error {
     color: red;
- 
+    border-left: solid 3px red;
+    
 }
 
 
