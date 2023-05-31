@@ -3,7 +3,7 @@ import {FormGroup, FormControl, Validators, FormsModule, ReactiveFormsModule} fr
 import { InvalidZone } from 'luxon';
 import { OnInit } from '@angular/core';
 import { Moment } from 'src/app/Moment';
-
+import { MessagesService } from 'src/app/services/messages.service';
 
 
 @Component({
@@ -18,7 +18,7 @@ export class MomentFormComponent  implements OnInit  {
   momentForm!: FormGroup
 submitted = false
 
-  constructor() {}
+  constructor(private messagesService: MessagesService) {}
 
 
   ngOnInit(): void {
@@ -59,10 +59,16 @@ submitted = false
   
 
 submit() {
+
+ if(this.image.valid && this.description.valid && this.title.valid) {
+
   this.submitted = true
 
    console.log(this.momentForm.value)
   this.onSubmit.emit(this.momentForm.value)
+ } else {
+  this.messagesService.add('Erro ao enviar a mensagem :c')
+ }
 
 }
 
