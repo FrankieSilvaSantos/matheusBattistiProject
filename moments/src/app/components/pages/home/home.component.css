@@ -6,6 +6,8 @@
 
 }
 
+
+
 .home-container h1 {
     margin-bottom: 0.5em;
 }
@@ -19,7 +21,7 @@
 }
 
 .moment {
-    width: 40%;
+    width: 32%;
     margin-bottom: 1em;
     text-align: center;
     
@@ -41,11 +43,12 @@
 }
 
 a {
-    color: #dce129;
+    color: rgb(0, 0, 0);
     transition: .4;
 }
 
 a:hover {
     background-color: #efefef;
     padding: .3em .6em;
+    border-radius: 20px;
 }

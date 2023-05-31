@@ -4,8 +4,9 @@
 }
 
 .aCor:hover, .aCor:focus {
-    color: #dce129;
-    border-bottom:solid 2px #dce129;
+    color: #f6ff00;
+    border-bottom:solid 2px  #f6ff00; 
+    font-weight: bold;
 }
 
 .navbarStyle {

@@ -15,7 +15,7 @@ a {
 }
 
 a:hover {
-    color: #dce129;
+    color:#f6ff00; font-weight: bold;;
 }
 
 .navPositioning {
@@ -23,3 +23,7 @@ a:hover {
     justify-content: end;
 }
 
+body {
+    background-image: linear-gradient(to top,rgb(121, 119, 119),rgb(255, 255, 255));
+    
+}

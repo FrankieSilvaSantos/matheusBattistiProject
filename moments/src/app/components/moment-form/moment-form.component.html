@@ -3,7 +3,7 @@
   
    
         <div class="form mb-4">
-          <input type="text" id="form6Example1" formControlName="title" class="form-control" />
+          <input type="text" id="form6Example1" formControlName="title" class="form-control inputText" />
           <label class="form-label" for="form6Example1">Titulo</label>
         </div>
 
@@ -15,7 +15,7 @@
     <!-- Message input -->
     <div class="form mb-4">
       <textarea class="form-control" formControlName="description" id="form6Example7" rows="4"></textarea>
-      <label class="form-label" for="descricao">Descrição</label>
+      <label class="form-label" for="description">Descrição</label>
     </div>
 
     <div *ngIf="description.invalid && formDir.submitted" class="validation-error">
@@ -23,7 +23,7 @@
     </div>
 
     <div class="form mb-4">
-        <input type="file" class="form-control"   (change)="onFileSelected($event)">
+        <input type="file" class="form-control inputFile"   (change)="onFileSelected($event)">
         <label class="form-label" for="image">Coloque a foto que mais marcou</label>
       </div>
 

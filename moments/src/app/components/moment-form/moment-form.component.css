@@ -27,5 +27,50 @@
     
 }
 
+.form-label {
+    font-weight: bold;
+}
 
+.inputText {
+    transition: 1s;
+    outline: inherit;
+    border: inherit;
+}
+
+.inputText:hover, .inputText:active,input:focus {
+    
+    color: white;
+    box-shadow:2px 2px 4px black !important; 
+    outline:2px solid gray !important;
+   
+}
+
+textarea {
+    transition: 1s;
+    outline: inherit;
+    border: inherit;
+}
+
+textarea:hover, textarea:active, textarea:focus {
+    
+    color: white;
+    box-shadow:2px 2px 4px black !important; 
+    outline:2px solid gray !important;
+   
+   
+    
+}
+
+.inputFile {
+    transition: 1s;
+    outline: inherit;
+    border: inherit;
+    
+}
+
+.inputFile:hover, .inputFile:focus, .inputFile:active{
+    
+    box-shadow:2px 2px 4px black !important; 
+    outline:2px solid gray !important;
+}
 
