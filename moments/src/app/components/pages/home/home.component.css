@@ -30,6 +30,8 @@
 .moment img {
     width: 100%;
     margin-bottom: 1em;
+    border-radius: 20px;
+    border: 2px solid black;
 }
 
 .moment h3, .moment p {
