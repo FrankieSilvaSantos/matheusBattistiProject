@@ -1,26 +1,48 @@
 <div class="home-container">
 
-    <div style="margin-bottom: 2em;">
+  <div style="margin-bottom: 2em;">
     <h1>Veja o que estão <span style="color: #f6ff00; font-weight: bold;">compartilhando</span></h1>
-</div>
+  </div>
 
-    <div  *ngIf="moments.length>0; else noMoments">
-        <div  class="moments-container">
-            <div class="moment" *ngFor="let moment of moments">
+  <div class="input-group searchStyle">
 
 
-                <img src="{{baseApiUrl}}uploads/{{moment.image}}" alt="{{moment.title}}" >
-                <h3>{{moment.title}}</h3>
-                <p class="date">Em {{moment.created_at}}</p>
-                <p>Comentários: {{moment.comments!.length}}</p>
-                <p><a routerLink="moments/{{moment.id}}">Detalhes</a></p>
+    <form action="">
+     
+      
+     
+        <input  type="search"   id="form1"  class="form-control inputSearch" formControlName="input"   placeholder="busque um momento"  (input)="search($event)"/>
+       
+     
+        
 
-            </div>
-        </div>
+
+    
+        
+
+   
+    </form>
+  </div>
+
+
+
+  <div *ngIf="moments.length>0; else noMoments">
+    <div class="moments-container">
+      <div class="moment" *ngFor="let moment of moments">
+
+
+        <img src="{{baseApiUrl}}uploads/{{moment.image}}" alt="{{moment.title}}">
+        <h3>{{moment.title}}</h3>
+        <p class="date">Em {{moment.created_at}}</p>
+        <p>Comentários: {{moment.comments!.length}}</p>
+        <p><a routerLink="moments/{{moment.id}}">Detalhes</a></p>
+
+      </div>
     </div>
+  </div>
 
-    <ng-template #noMoments>
-        <h1>Não há momentos cadastrasdos :c</h1>
-    </ng-template>
+  <ng-template #noMoments>
+    <h1>Não há momentos cadastrasdos :c</h1>
+  </ng-template>
 
 </div>

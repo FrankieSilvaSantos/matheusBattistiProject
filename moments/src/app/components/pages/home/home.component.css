@@ -55,3 +55,65 @@ a:hover {
     padding: .3em .6em;
     border-radius: 20px;
 }
+
+.searchStyle {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.buttonStyle {
+    width: 60px;
+
+
+    background-color: gray;
+    color: white;
+    box-shadow:2px 2px 4px black;
+    outline: inherit;
+    border: inherit;
+    height: 39px;
+    border-radius: 0px 10px 10px 0px;
+    
+}
+
+
+
+.buttonStyle:hover, .buttonStyle:focus, .buttonStyle:active, .buttonStyle:visited    {
+    background-color: rgba(32, 32, 32, 0.795) !important;
+    color: white !important;
+    box-shadow:2px 2px 4px black !important; 
+    outline:2px solid gray !important;
+    
+   
+   
+}
+
+.inputSearch {
+    text-align: center;
+    transition: 1s;
+    outline: inherit;
+    border: inherit;
+    background-image: url('/assets/icons/magnifying-glass-solid.svg');
+    background-repeat: no-repeat;
+    background-size: 8%;
+    background-position-y: 6.5px;
+    background-position-x: 5px;
+}
+
+.inputSearch:hover, .inputText:active,input:focus {
+    
+    
+    box-shadow:2px 2px 4px black !important; 
+    outline:2px solid gray !important;
+   
+}
+
+/* .form {
+    display: flex;
+} */
+
+.form2 {
+    display: flex;
+    gap: .5em;
+}
